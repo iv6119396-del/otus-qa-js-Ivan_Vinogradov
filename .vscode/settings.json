@@ -1,0 +1,7 @@
+{
+  "jest.rootPath": "otus-qajs-master",
+  "jest.jestCommandLine": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
+  "jest.runMode": "on-demand",
+  "jest.autoRun": "off",
+  "jest.useJest30": true
+}
