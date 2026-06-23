@@ -1,4 +1,5 @@
 const baseUrl = 'https://dummyjson.com';
+import { describe, expect, test as it } from '@jest/globals';
 
 describe('Users', () => {
   it('List of users', async () => {

@@ -1,4 +1,5 @@
 const baseUrl = 'https://bookstore.demoqa.com';
+import { describe, expect, test as it } from '@jest/globals';
 
 // Для тестирования был создан аккаунт (QWERty/QWERty11310@)
 describe('CheckingRegistration', () => {
