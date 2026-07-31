@@ -3,8 +3,11 @@
  * https://jestjs.io/docs/configuration
  */
 
-/** @type {import('jest').Config} */
+import { createDefaultEsmPreset } from 'ts-jest';
+
+const tsJestPreset = createDefaultEsmPreset();
 export default {
+  ...tsJestPreset,
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -77,18 +80,7 @@ export default {
   // ],
 
   // An array of file extensions your modules use
-  // moduleFileExtensions: [
-  //   "js",
-  //   "mjs",
-  //   "cjs",
-  //   "jsx",
-  //   "ts",
-  //   "mts",
-  //   "cts",
-  //   "tsx",
-  //   "json",
-  //   "node"
-  // ],
+  moduleFileExtensions: ['ts', 'js', 'mjs', 'json', 'node'],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   // moduleNameMapper: {},
@@ -109,7 +101,18 @@ export default {
   // projects: undefined,
 
   // Use this configuration option to add custom reporters to Jest
-  // reporters: undefined,
+  reporters: [
+    'default',
+    [
+      'jest-html-reporter',
+      {
+        pageTitle: 'Test Report',
+        outputPath: './test-report.html',
+        includeFailureMsg: true,
+        includeStackTrace: true
+      }
+    ]
+  ],
 
   // Automatically reset mock state before every test
   // resetMocks: false,

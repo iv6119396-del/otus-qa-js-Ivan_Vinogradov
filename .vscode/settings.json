@@ -3,5 +3,13 @@
   "jest.jestCommandLine": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
   "jest.runMode": "on-demand",
   "jest.autoRun": "off",
-  "jest.useJest30": true
+  "jest.useJest30": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
 }

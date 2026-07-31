@@ -1,6 +1,7 @@
-import { config, password, userName, headers } from '../../framework/config/authConfig.js';
+import { config, password, userName, headers } from '../../framework/config/authConfig';
+import { describe, expect, test as it } from '@jest/globals';
 
-// Тесты на авторизацию, метод: https://bookstore.demoqa.com/Account/v1/AuthorizedЫ
+// Тесты на авторизацию, метод: https://bookstore.demoqa.com/Account/v1/Authorized
 describe('Авторизация', () => {
   it('Успешная авторизация', async () => {
     const respons = await fetch(`${config}/Account/v1/Authorized`, {

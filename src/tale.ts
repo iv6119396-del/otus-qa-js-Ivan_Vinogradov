@@ -1,4 +1,4 @@
-export function kolobok(nameCharacter) {
+export function kolobok(nameCharacter: string) {
   if (nameCharacter === 'дедушка') {
     return 'Я от дедушки ушёл';
   } else if (nameCharacter === 'заяц') {
@@ -9,7 +9,7 @@ export function kolobok(nameCharacter) {
   return 'Неизвестный персонаж';
 }
 
-export function newYear(namePerson) {
+export function newYear(namePerson: string) {
   if (namePerson === 'Дед Мороз') {
     return 'Дед Мороз! Дед Мороз! Дед Мороз!';
   } else if (namePerson === 'Снегурочка') {

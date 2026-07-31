@@ -1,6 +1,7 @@
 import { nameIsValid } from '../../../src/app';
 import { fullTrim } from '../../../src/app';
 import { getTotal } from '../../../src/app';
+import { describe, expect, test } from '@jest/globals';
 
 // Тесты для nameIsValid
 describe('nameIsValid', () => {
